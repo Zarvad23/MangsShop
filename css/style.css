@@ -787,6 +787,59 @@ header{
    }
 }
 
+.cool_img {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+}
+ 
+.cool_img .info {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+}
+ 
+.cool_img .info span {
+    display: block;
+    position: relative;
+    top: 260px;
+    color: #FFFFFF;
+    background: #000000;
+    transition-delay: 0;
+    transition-duration: 0.3s;
+}
+ 
+.cool_img .info .info_title {
+	text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    opacity: 0.8;
+    line-height: 1;
+}
+ 
+.cool_img .info .info_text {
+    font-size: 16px;
+    padding: 5px;
+    opacity: 0.6;
+    line-height: 1;
+    height: 100%;
+    text-overflow: ellipsis;
+}
+ 
+.cool_img:hover .info span, .cool_img:focus .info span {
+    top: 0;
+}
+ 
+.cool_img:hover .info .info_title {
+    transition-delay: 0.25s;
+}
+ 
+.cool_img:hover .info .info_text {
+    transition-delay: 0.25s;
+}
+
 /*6 экран*/
 .screen6{
 	display: flex;
